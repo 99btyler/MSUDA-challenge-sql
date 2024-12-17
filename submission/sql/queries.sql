@@ -38,7 +38,7 @@ JOIN employees AS e ON de.emp_no = e.emp_no
 JOIN departments AS d ON de.dept_no = d.dept_no
 WHERE de.dept_no = 'd007' OR de.dept_no = 'd005';
 
--- EMPLOYEES (last name frequency)
+-- EMPLOYEES (last name frequency): last_name, count_of_last_name
 SELECT last_name, COUNT(last_name) as count_of_last_name
 FROM employees
 GROUP BY last_name
