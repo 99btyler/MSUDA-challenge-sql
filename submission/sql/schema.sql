@@ -1,6 +1,15 @@
--- STEP 1 (creating tables): Run this code
--- STEP 2 (importing data): Using pgAdmin 4, right click each table and import the data (make sure Header is selected in Options)
--- ERROR IMPORTING DATA? Check which table is empty, you will need to fill that one first
+/*
+
+pgAdmin4 Steps
+- Create the database: MSUDA-challenge-sql
+- Create the tables: Open and run schema.sql (this file)
+- Import the data: Right click each table, in the order of creation, and import from data
+	- Make sure Options>Header is selected
+
+ERROR IMPORTING THE DATA?
+Check which table caused the error, you need to fill that one first
+
+*/
 
 DROP TABLE IF EXISTS dept_emp;
 DROP TABLE IF EXISTS dept_manager;
